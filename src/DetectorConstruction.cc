@@ -90,8 +90,8 @@ G4VPhysicalVolume* DetectorConstruction::Construct(){
   G4double siPMEnvelope1_sizeY = 140*mm;
   G4double siPMEnvelope1_sizeZ = (2*projection_surface_R + 20*mm);  
   G4Box* solidSiPMEnvelope1 = new G4Box("solidSiPMEnvelope1", siPMEnvelope1_sizeX/2.0, siPMEnvelope1_sizeY/2.0, siPMEnvelope1_sizeZ/2.0);
-  G4LogicalVolume* logicSiPMEnvelope1 = new G4LogicalVolume(solidSiPMEnvelope1,world_mat,"logicSiPMEnvelope1");                                   
   /*
+  G4LogicalVolume* logicSiPMEnvelope1 = new G4LogicalVolume(solidSiPMEnvelope1,world_mat,"logicSiPMEnvelope1");                                   
   new G4PVPlacement(0,                     //rotation
 		    G4ThreeVector(),       //position
 		    logicSiPMEnvelope1,     //its logical volume
@@ -106,8 +106,8 @@ G4VPhysicalVolume* DetectorConstruction::Construct(){
   G4double siPMEnvelope2_sizeY = siPMEnvelope1_sizeY + 10*mm;
   G4double siPMEnvelope2_sizeZ = siPMEnvelope1_sizeZ - 50*mm;  
   G4Box* solidSiPMEnvelope2 = new G4Box("solidSiPMEnvelope2", siPMEnvelope2_sizeX/2.0, siPMEnvelope2_sizeY/2.0, siPMEnvelope2_sizeZ/2.0);
-  G4LogicalVolume* logicSiPMEnvelope2 = new G4LogicalVolume(solidSiPMEnvelope2,world_mat,"logicSiPMEnvelope2");
   /*
+  G4LogicalVolume* logicSiPMEnvelope2 = new G4LogicalVolume(solidSiPMEnvelope2,world_mat,"logicSiPMEnvelope2");
   new G4PVPlacement(0,                     //rotation
 		    G4ThreeVector(),       //position
 		    logicSiPMEnvelope2,     //its logical volume
